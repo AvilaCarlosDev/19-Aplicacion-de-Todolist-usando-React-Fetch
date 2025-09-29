@@ -1,11 +1,126 @@
-/* 
+/* Tipografía - importar Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap");
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+:root {
+  --card-bg: #ffffff;
+  --muted: #9aa0a6;
+}
 
-*/
+/* Base */
+body {
+  font-family: "Quicksand", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background-color: #f4f4f4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Página */
+.todo-page {
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+}
+
+/* Título grande y desvanecido */
+.todo-title {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #f2c8c8;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.45;
+  letter-spacing: 8px;
+  text-transform: lowercase;
+}
+
+/* Card principal: bordes suaves y sombras apiladas (para efecto tipo mock) */
+.todo-card {
+  border: 0;
+  background: var(--card-bg);
+  border-radius: 2px;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04), 0 6px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* pseudo-sombra inferior apilada */
+.todo-card::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -18px;
+  height: 12px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0));
+  border-radius: 2px;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+/* Input estilo top-item */
+.todo-input {
+  border: 0;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  font-size: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: none;
+  background: transparent;
+  color: #555;
+}
+
+/* Separator line como en el mock */
+.list-group-item {
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+}
+
+/* Texto de tarea ligero y grande */
+.todo-text {
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #444;
+}
+
+/* Botón eliminar: esconder por defecto, mostrar al hover/focus */
+.delete-btn {
+  opacity: 0;
+  transform: translateX(6px);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  pointer-events: none;
+  color: #d9534f;
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* mostrar al pasar el mouse sobre el item o al enfocar */
+.todo-item:hover .delete-btn,
+.todo-item:focus-within .delete-btn {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* Footer count parecido al mock */
+.card-footer {
+  background: transparent;
+  border-top: 1px solid #eee;
+  color: var(--muted);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767px) {
+  .todo-card {
+    width: 95% !important;
+  }
+  .todo-title {
+    font-size: 4rem;
+  }
+}

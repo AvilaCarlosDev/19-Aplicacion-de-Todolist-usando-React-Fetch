@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@swc/core':
+        specifier: ^1.13.5
+        version: 1.13.5
       bootstrap:
         specifier: ^5.2.2
         version: 5.3.8(@popperjs/core@2.11.8)

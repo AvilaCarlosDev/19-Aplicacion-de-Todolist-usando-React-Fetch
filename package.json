@@ -1,7 +1,9 @@
 {
-  "name": "project",
+  "name": "mis-tipos-personalizados",
+  "version": "1.0.0",
+  "description": "Mis definiciones de tipo personalizadas",
+  "main": "index.d.ts",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@swc/core": "^1.13.5",
     "bootstrap": "^5.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

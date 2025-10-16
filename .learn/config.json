@@ -1,0 +1,215 @@
+{
+    "config": {
+        "port": 3000,
+        "os": "win32",
+        "editor": {
+            "mode": "extension",
+            "agent": "vscode",
+            "version": "5.0.289"
+        },
+        "dirPath": "./.learn",
+        "configPath": "learn.json",
+        "outputPath": ".learn/dist",
+        "publicPath": "/preview",
+        "publicUrl": "http://localhost:3000",
+        "contact": "https://github.com/learnpack/learnpack/issues/new",
+        "language": "auto",
+        "autoPlay": true,
+        "projectType": "template",
+        "grading": "isolated",
+        "exercisesPath": "./",
+        "webpackTemplate": null,
+        "disableGrading": false,
+        "disabledActions": [],
+        "actions": [],
+        "entries": {
+            "html": "index.html",
+            "vanillajs": "index.js",
+            "react": "app.jsx",
+            "node": "app.js",
+            "python3": "app.py",
+            "java": "app.java"
+        },
+        "suggestions": {
+            "agent": null
+        },
+        "warnings": {},
+        "title": {
+            "en": "React.js Starter Template for Beginners",
+            "es": "Plantilla Inicial para empezar proyectos de React.js para principiantes"
+        },
+        "description": {
+            "en": "This is a starter template for React.js projects. It includes a basic folder structure, a sample component, styles and other usual configurations to quicly kickstart your project.",
+            "es": "Este es una plantilla inicial para proyectos de React.js. Incluye una estructura básica de carpetas, un componente de ejemplo, estilos y otras configuraciones habituales para iniciar rápidamente tu proyecto."
+        },
+        "repository": "https://github.com/4geeksacademy/react-hello-vite",
+        "preview": "",
+        "difficulty": "beginner",
+        "technologies": [
+            "React.js",
+            "Javascript",
+            "Vite"
+        ],
+        "translations": [],
+        "root": ".",
+        "ignore": [
+            "node_modules",
+            "src"
+        ],
+        "exercises": [
+            "."
+        ]
+    },
+    "address": "http://localhost:3000",
+    "currentExercise": null,
+    "exercises": [
+        {
+            "position": 0,
+            "path": "dist",
+            "slug": "dist",
+            "translations": {},
+            "language": "html",
+            "entry": "dist/index.html",
+            "title": "dist",
+            "graded": false,
+            "files": [
+                {
+                    "path": "dist/assets",
+                    "name": "assets",
+                    "hidden": true
+                },
+                {
+                    "path": "dist/index.html",
+                    "name": "index.html",
+                    "hidden": false
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 1,
+            "path": "node_modules",
+            "slug": "node_modules",
+            "translations": {},
+            "language": "node",
+            "entry": null,
+            "title": "node_modules",
+            "graded": false,
+            "files": [
+                {
+                    "path": "node_modules/.bin",
+                    "name": ".bin",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/.modules.yaml",
+                    "name": ".modules.yaml",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/.pnpm",
+                    "name": ".pnpm",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/.pnpm-workspace-state-v1.json",
+                    "name": ".pnpm-workspace-state-v1.json",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/.vite",
+                    "name": ".vite",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@swc",
+                    "name": "@swc",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@types",
+                    "name": "@types",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@vitejs",
+                    "name": "@vitejs",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/bootstrap",
+                    "name": "bootstrap",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint",
+                    "name": "eslint",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-plugin-react",
+                    "name": "eslint-plugin-react",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-plugin-react-hooks",
+                    "name": "eslint-plugin-react-hooks",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-plugin-react-refresh",
+                    "name": "eslint-plugin-react-refresh",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react",
+                    "name": "react",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react-dom",
+                    "name": "react-dom",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/vite",
+                    "name": "vite",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 2,
+            "path": "src",
+            "slug": "src",
+            "translations": {},
+            "language": null,
+            "entry": null,
+            "title": "src",
+            "graded": false,
+            "files": [
+                {
+                    "path": "src/img",
+                    "name": "img",
+                    "hidden": true
+                },
+                {
+                    "path": "src/js",
+                    "name": "js",
+                    "hidden": true
+                },
+                {
+                    "path": "src/styles",
+                    "name": "styles",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        }
+    ],
+    "bugsLink": null,
+    "videoSolutions": false,
+    "localhostOnly": false,
+    "session": 1864934455498927900
+}

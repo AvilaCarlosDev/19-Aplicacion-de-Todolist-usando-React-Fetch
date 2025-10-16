@@ -154,7 +154,8 @@ const Home = () => {
       setError(null);
 
       // Check if it's an initial task (has 'initial-' prefix)
-      const isInitialTask = taskId.startsWith("initial-");
+      // Convert taskId to string to ensure startsWith works correctly
+      const isInitialTask = String(taskId).startsWith("initial-");
 
       if (isInitialTask) {
         // For initial tasks, just remove from local state

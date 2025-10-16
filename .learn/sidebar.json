@@ -1,0 +1,11 @@
+{
+  "src": {
+    "us": "src"
+  },
+  "node_modules": {
+    "us": "node_modules"
+  },
+  "dist": {
+    "us": "dist"
+  }
+}
